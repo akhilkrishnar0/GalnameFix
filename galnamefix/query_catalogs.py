@@ -54,7 +54,7 @@ def process_galaxy_catalog(csvfile, simbad_radius=15, ned_radius=15, sdss_radius
     df["OBJNAME_SDSS"], df["RA_SDSS"], df["DEC_SDSS"] = None, None, None
 
     for i, row in df.iterrows():
-        ra, dec = row["_RA"], row["_DE"]
+        ra, dec = row["RA"], row["Dec"]
 
         s_name, s_ra, s_dec = query_simbad_improved(ra, dec, simbad_radius)
         n_name, n_ra, n_dec = query_ned(ra, dec, ned_radius)
