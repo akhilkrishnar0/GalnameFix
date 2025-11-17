@@ -1,0 +1,14 @@
+[project]
+name = "GalnameFix"
+version = "0.1.0"
+description = "Automatic galaxy name resolver based on catalog prefix priority and coordinate consistency"
+authors = [{ name = "Akhil Krishna" }]
+requires-python = ">=3.8"
+dependencies = [
+"astropy"
+]
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
