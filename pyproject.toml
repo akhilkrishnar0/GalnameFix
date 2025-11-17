@@ -5,10 +5,14 @@ description = "Automatic galaxy name resolver based on catalog prefix priority a
 authors = [{ name = "Akhil Krishna" }]
 requires-python = ">=3.8"
 dependencies = [
-"astropy"
+    "astropy"
 ]
-
 
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["galnamefix*"]
+
