@@ -18,6 +18,16 @@
 pip install .
 
 
+## Example
+```
+from galnamefix import process_galaxy_catalog, choose_primary
+import pandas as pd
+
+df = process_galaxy_catalog("prg_withnames.csv")
+df['PRIMARY_NAME'] = df.apply(choose_primary, axis=1)
+df.head()
+```
+
 ## 📄 LICENSE
 ```text
 MIT License
