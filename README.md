@@ -21,6 +21,7 @@ pip install .
 ## 📄 LICENSE
 ```text
 MIT License
+```
 
 
 
